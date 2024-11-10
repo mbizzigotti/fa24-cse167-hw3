@@ -80,7 +80,13 @@ I implemented basic shadow mapping with directional light. The shadow mapping is
 ```sh
 ./balboa -hw 3_4 ../scenes/hw3/untitled.json -textures -directional -1 2 -1 1 1 1 2 -shadow 0 -flat
 ```
-Screenshots can be found at `outputs/hw_3_5_1.png` and `outputs/hw_3_5_2.png`
+`-flat` changes the lighting to use face normals, which gives a better look for this particular scene.
+
+![outputs/hw_3_5_1.png](outputs/hw_3_5_1.png)
+![outputs/hw_3_5_2.png](outputs/hw_3_5_2.png)
+![outputs/hw_3_5_3.png](outputs/hw_3_5_3.png)
+![outputs/hw_3_5_4.png](outputs/hw_3_5_4.png)
+![outputs/hw_3_5_5.png](outputs/hw_3_5_5.png)
 
 Shadow command argument:
 ```sh
