@@ -111,5 +111,4 @@ The minecraft world was downloaded from ([https://casual-effects.com/data/](http
     ------------------
     Converted to OBJ by Morgan McGuire using Mineways (http://mineways.com)
 
-Files added: `scenes/hw3/untitled.json` and `scenes/hw3/untitled.ply`
-
+Files added: `scenes/hw3/untitled.json`, `scenes/hw3/untitled.ply`, and `scenes/hw3/rungholt-RGB.png`
