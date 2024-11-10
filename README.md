@@ -71,7 +71,7 @@ To better show off point light:
 ```sh
 ./balboa -hw 3_4 ../scenes/hw3/spheres.json -point 2 5 0 1 1 1 1.0 -nomove
 ```
-![hw_3_4_lights_spheres.png](hw_3_4_lights_spheres.png)
+![outputs/hw_3_4_lights_spheres.png](outputs/hw_3_4_lights_spheres.png)
 
 
 
