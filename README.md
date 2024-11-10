@@ -22,7 +22,7 @@ Example:
 ```sh
 ./balboa -hw 3_4 ../scenes/hw3/teapot.json -directional 0 0 1 0 0 1 0.5 -directional -1 0 0 0 1 0 0.5 -directional 0 -1 0 1 0 0 0.5 -animate 2 0 1 -animate 1 1 1
 ```
-![outputs/hw_3_4_animation_teapot.gif](outputs/hw_3_4_animation_teapot.gif)
+[outputs/hw_3_4_animation_teapot.mov](outputs/hw_3_4_animation_teapot.mov)
 
 Breakdown:
 - `-directional  0  0 1 0 0 1 0.5` creates a directional light with direction=(0,0,1) color=(0,0,1) specularStrength=0.5
