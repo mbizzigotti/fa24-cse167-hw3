@@ -32,8 +32,8 @@ Breakdown:
 - `-animate 1 1 1` moves the light at index 1 according to style 1 with speed=1
 
 Animate command argument:
-```
-    -animate <light index> <style> <speed>
+```sh
+-animate <light index> <style> <speed>
 ```
 Each light has an index corresponding to their order, starting with the first light being index 0. The speed is just a constant to be multiplied to the time for each update of the light.
 
@@ -61,15 +61,15 @@ Breakdown:
 - `-spot 0 -300 -800 0 0 1 1 1 1 0.5 4 10` creates a spot light with position=(0,-300,-800) direction=(0,0,1) color=(1,1,1) specularStrength=0.5 cutoff=4 outerCutoff=10
 
 Light command argument:
-```
-    -directional           <direction XYZ> <color RGB> <specular strength>
-    -point  <position XYZ>                 <color RGB> <specular strength>
-    -spot   <position XYZ> <direction XYZ> <color RGB> <specular strength> <cutoff> <outer cutoff>
+```sh
+-directional           <direction XYZ> <color RGB> <specular strength>
+-point  <position XYZ>                 <color RGB> <specular strength>
+-spot   <position XYZ> <direction XYZ> <color RGB> <specular strength> <cutoff> <outer cutoff>
 ```
 
 To better show off point light:
-```
-    ./balboa -hw 3_4 ../scenes/hw3/spheres.json -point 2 5 0 1 1 1 1.0 -nomove
+```sh
+./balboa -hw 3_4 ../scenes/hw3/spheres.json -point 2 5 0 1 1 1 1.0 -nomove
 ```
 ![hw_3_4_lights_spheres.png](hw_3_4_lights_spheres.png)
 
@@ -77,14 +77,14 @@ To better show off point light:
 
 # Part 5: my own scene  +  Bonus: shadow mapping
 I implemented basic shadow mapping with directional light. The shadow mapping is best demonstrated in my own scene `untitled.json`
-```
-    ./balboa -hw 3_4 ../scenes/hw3/untitled.json -textures -directional -1 2 -1 1 1 1 2 -shadow 0 -flat
+```sh
+./balboa -hw 3_4 ../scenes/hw3/untitled.json -textures -directional -1 2 -1 1 1 1 2 -shadow 0 -flat
 ```
 Screenshots can be found at `outputs/hw_3_5_1.png` and `outputs/hw_3_5_2.png`
 
 Shadow command argument:
-```
-    -shadow <light index>
+```sh
+-shadow <light index>
 ```
 Light index is which light's direction to use when rendering the shadow map.
 
