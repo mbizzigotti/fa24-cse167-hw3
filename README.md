@@ -53,12 +53,12 @@ Example:
 ```sh
 ./balboa -hw 3_4 ../scenes/hw3/buddha.json -textures -directional 1 0 0 0 0 1 0.5 -animate 0 1 1 -point 0 -1 0 0 1 0 0.5 -animate 1 2 2 -spot 0 -300 -800 0 0 1 1 1 1 0.5 4 10 -animate 2 4 1 -nomove
 ```
-Video of render can be found at `outputs/hw_3_4_lights_buddha.mov`
+[outputs/hw_3_4_lights_buddha.mov](outputs/hw_3_4_lights_buddha.mov)
 
 Breakdown:
-    - `-directional 1 0 0 0 0 1 0.5` creates a directional light with direction=(1,0,0) color=(0,0,1) specularStrength=0.5
-    - `-point 0 -1 0 0 1 0 0.5` creates a point light with position=(0,-1,0) color=(0,1,0) specularStrength=0.5
-    - `-spot 0 -300 -800 0 0 1 1 1 1 0.5 4 10` creates a spot light with position=(0,-300,-800) direction=(0,0,1) color=(1,1,1) specularStrength=0.5 cutoff=4 outerCutoff=10
+- `-directional 1 0 0 0 0 1 0.5` creates a directional light with direction=(1,0,0) color=(0,0,1) specularStrength=0.5
+- `-point 0 -1 0 0 1 0 0.5` creates a point light with position=(0,-1,0) color=(0,1,0) specularStrength=0.5
+- `-spot 0 -300 -800 0 0 1 1 1 1 0.5 4 10` creates a spot light with position=(0,-300,-800) direction=(0,0,1) color=(1,1,1) specularStrength=0.5 cutoff=4 outerCutoff=10
 
 Light command argument:
 ```
@@ -67,10 +67,11 @@ Light command argument:
     -spot   <position XYZ> <direction XYZ> <color RGB> <specular strength> <cutoff> <outer cutoff>
 ```
 
-Also included `hw_3_4_lights_spheres.png` to better show off point light.
+To better show off point light:
 ```
     ./balboa -hw 3_4 ../scenes/hw3/spheres.json -point 2 5 0 1 1 1 1.0 -nomove
 ```
+![hw_3_4_lights_spheres.png](hw_3_4_lights_spheres.png)
 
 
 
